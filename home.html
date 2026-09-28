@@ -1,38 +1,106 @@
+<!-- Hirona -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="MPLS Dog Boarding offers luxury overnight boarding and daily care for dogs in Minneapolis.">
+        <meta name="keywords" content="dog boarding, Minneapolis, dog care, pet hotel">
+        <meta name="author" content="Hirona">
         <title>MPLS Dogboarding </title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <style>
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 105px auto 15%;
+            width: 100vw;
+            height: 100vh;
+        }
         
+        header {
+            grid-column: 1 / 4;
+            grid-row: 1;
+        }
+
+        header img {
+            display: block;
+            width: 20%;
+            margin: auto;
+        }
+
+        main {
+            grid-column: 1 / 4;
+            grid-row: 2;
+        }
+        
+        footer {
+            grid-column: 1 / 4;
+            grid-row: 3;
+            padding-top: 40px;
+        }
+
+        #flexcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            background-image: url("img/dog_bg.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        #flexcontainer aside {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 325px;
+            height: 350px;
+            padding: 10px;
+            margin: 4% 2%;
+            background-color: #ffffffcf;
+            border-radius: 10px;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+        }
+
+        #copyright {
+            width: 275px;
+            margin: auto;
+        }
         </style>
     </head>
     <body>
         <div id="container">
             <header>
-                <img src="" alt="">
+                <img src="img/mpls_dog_logo.png" alt="MPLS Dog Boarding logo">
             </header>
             <main id="flexcontainer">
                 <aside>
                     <h2>About Us</h2>
                     <p>Quality dog care service - The luxury hotel for dogs!</p>
+                    <p>Serving the MPLS area for well over 10 years!</p>
                 </aside>
                 <aside>
                     <h2>Price</h2>
                     <h3>Weekly Boarding</h3>
-                    <p>$425 - 7 days [24 hours from drop-off time] </li>
+                    <p>$425 - 7 days [24 hours from drop-off time] </p>
                     <h3>Daily Rate: </h3>
-                    <p>$75 - 1 day [24 hours from drop-off time</p>
-                    
-                    </ul>
+                    <p>$75 - 1 day [24 hours from drop-off time]</p>
                 </aside>
                 <aside>
                     <h2>Hours of Operation</h2>
                     <ul>
-                        <li>Monday: - 7am - 6pm</li>
-                        <li>Tuesday: - 7am - 6pm</li>
-                        <li>Wednesday: - 7am - 6pm</li>
+                        <li>Monday: 7am - 6pm</li>
+                        <li>Tuesday: 7am - 6pm</li>
+                        <li>Wednesday: 7am - 6pm</li>
                         <li>Thursday: 7am - 6pm</li>
-                        <li>Friday:</li>
+                        <li>Friday: 7am - 6pm</li>
+                    </ul>
+                    <h3>Weekend Hours</h3>
+                    <ul>
+                        <li>Saturday and Sunday: 1pm - 9pm</li>
                     </ul>
                 </aside>
             </main>
